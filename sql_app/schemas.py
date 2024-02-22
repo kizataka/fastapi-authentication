@@ -17,5 +17,5 @@ class UserRead(BaseModel):
 
 # ユーザー認証（ログイン）に使用するスキーマ
 class UserLogin(BaseModel):
-    username: str = Field(..., example="user1")
+    name: str = Field(..., example="user1")
     password: str = Field(..., min_length=8, example="strongpassword")
